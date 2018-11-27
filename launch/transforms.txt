@@ -1,3 +1,5 @@
-/laser /velodyne
+/laser_base /velodyne
 
-/odom / base_link
+/odom /base_link
+
+/map /odom
