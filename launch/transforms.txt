@@ -1,5 +1,9 @@
 /laser_base /velodyne
+rosrun tf static_transform_publisher 0 0 0 0 0 /laser_base /velodyne 1
 
 /odom /base_link
+rosrun tf static_transform_publisher 0 0 0 0 0 /odom /base_link 1
 
 /map /odom
+rosrun tf static_transform_publisher 0 0 0 0 0 /map /odom 1
+
