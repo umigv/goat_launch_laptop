@@ -10,4 +10,18 @@
     <node name="rviz" pkg="rviz" type="rviz" required="true"
         args="-d $(find cartographer_ros)/configuration_files/demo_3d.rviz" />
 
+    <node name="static_transform_publisher1" pkg="tf"
+        type="static_transform_publisher"
+        args="0 0 0 0 0 0 /laser_base /velodyne 1" />
+
+    <node name="static_transform_publisher2" pkg="tf"
+        type="static_transform_publisher"
+        args="0 0 0 0 0 0 /odom /base_link 1" />
+
+    <node name="static_transform_publisher3" pkg="tf"
+        type="static_transform_publisher"
+        args="0 0 0 0 0 0 /map /odom 1" />
+
+
+
 </launch>
