@@ -6,7 +6,7 @@
     <param name="robot_description"
            textfile="$(find goat_description)/robots/goat.urdf"/>
 
-    <rosparam command="load" file="$(find goat_launch_laptop)/params/state.yaml"/>
+    <rosparam command="load" file="$(find goat_launch)/params/state.yaml"/>
 
     <node name="joint_state_publisher" pkg="joint_state_publisher"
           type="joint_state_publisher" output="screen" clear_params="true">

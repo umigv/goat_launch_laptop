@@ -1,5 +1,5 @@
 phidgets_imu_node:
-    frame_id: imu_ned
+    frame_id: imu
     period: 8.0
     angular_velocity_stdev: 0.0102974425867665445
     linear_acceleration_stdev: 0.02745862
