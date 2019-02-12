@@ -27,9 +27,8 @@
           type="imu_temporal_filter_node" output="screen" required="true"
           clear_params="true"/>
 
-<!--
     <node name="imu_jitter_filter_node" pkg="imu_jitter_filter"
 	  type="imu_jitter_filter_node" output="screen" required="true"
 	  clear_params="true"/>
--->
+
 </launch>
