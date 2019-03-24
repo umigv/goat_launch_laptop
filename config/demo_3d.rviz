@@ -8,6 +8,7 @@ Panels:
         - /Submaps1
         - /PointCloud23
         - /PointCloud23/Autocompute Value Bounds1
+        - /Marker1
       Splitter Ratio: 0.600670993
     Tree Height: 775
   - Class: rviz/Selection
@@ -300,7 +301,7 @@ Visualization Manager:
       Submaps:
         All: true
         Trajectory 0:
-          0.88: true
+          0.38: true
           Value: true
       Topic: /submap_list
       Tracking frame: base_link
@@ -385,6 +386,43 @@ Visualization Manager:
         Intra residuals: true
       Queue Size: 100
       Value: true
+    - Alpha: 1
+      Class: rviz_plugin_tutorials/Imu
+      Color: 204; 51; 204
+      Enabled: true
+      History Length: 1
+      Name: Imu
+      Topic: /imu/data_jitter_filtered
+      Unreliable: false
+      Value: true
+    - Alpha: 0.699999988
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /move_base/local_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
+      Value: false
+    - Alpha: 0.699999988
+      Class: rviz/Map
+      Color Scheme: map
+      Draw Behind: false
+      Enabled: false
+      Name: Map
+      Topic: /move_base/global_costmap/costmap
+      Unreliable: false
+      Use Timestamp: false
+      Value: false
+    - Class: rviz/Marker
+      Enabled: true
+      Marker Topic: /visualization_marker
+      Name: Marker
+      Namespaces:
+        /move_base/local_costmap/obstacles/voxel_grid: true
+      Queue Size: 100
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 100; 100; 100
@@ -409,21 +447,26 @@ Visualization Manager:
   Value: true
   Views:
     Current:
-      Angle: 0
-      Class: rviz/TopDownOrtho
+      Class: rviz/ThirdPersonFollower
+      Distance: 7.5912509
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
+      Focal Point:
+        X: -2.99658036
+        Y: 1.02139592
+        Z: -3.96317046e-06
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Scale: 27.7307911
+      Pitch: 0.559796393
       Target Frame: <Fixed Frame>
-      Value: TopDownOrtho (rviz)
-      X: 0
-      Y: 0
+      Value: ThirdPersonFollower (rviz)
+      Yaw: 2.85041022
     Saved: ~
 Window Geometry:
   Displays:

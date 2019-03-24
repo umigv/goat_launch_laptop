@@ -13,5 +13,9 @@
 
     <node name="rviz" pkg="rviz" type="rviz" required="true"
         args="-d $(find goat_launch_laptop)/config/demo_3d.rviz" />
+  
+    <node name="costmap_2d_markers" pkg="costmap_2d" type="costmap_2d_markers">
+	<remap from="voxel_grid" to="/move_base/local_costmap/obstacles/voxel_grid" />
+    </node>
 
 </launch>
