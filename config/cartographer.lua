@@ -36,13 +36,14 @@ options = {
   pose_publish_period_sec = 0.05,
   trajectory_publish_period_sec = 0.05,
   rangefinder_sampling_ratio = 1.0,
-  odometry_sampling_ratio = 0.5,
+  odometry_sampling_ratio = 1.0,--0.5
   fixed_frame_pose_sampling_ratio = 1.0,
-  imu_sampling_ratio = 0.2,
-  landmarks_sampling_ratio = 0.1,
+  imu_sampling_ratio = 1.0,--0.2
+  landmarks_sampling_ratio = 1.0,--0.1
 }
 
-MAP_BUILDER.use_trajectory_builder_3d = true
+MAP_BUILDER.use_trajectory_builder_3d = false --true
+MAP_BUILDER.use_trajectory_builder_2d = true
 MAP_BUILDER.num_background_threads = 4
 
 TRAJECTORY_BUILDER_3D.min_range = 0.5

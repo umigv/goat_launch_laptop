@@ -6,8 +6,9 @@ Panels:
       Expanded:
         - /Global Options1
         - /Submaps1
-        - /PointCloud23
-        - /PointCloud23/Autocompute Value Bounds1
+        - /PointCloud21
+        - /PointCloud21/Autocompute Value Bounds1
+        - /Map4/Status1
         - /Marker1
       Splitter Ratio: 0.600670993
     Tree Height: 775
@@ -231,66 +232,6 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 7.62650013
-        Min Value: 5.66666985
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz/PointCloud2
-      Color: 20; 220; 20
-      Color Transformer: FlatColor
-      Decay Time: 0.100000001
-      Enabled: false
-      Invert Rainbow: false
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: PointCloud2
-      Position Transformer: XYZ
-      Queue Size: 200
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.0299999993
-      Style: Flat Squares
-      Topic: /horizontal_laser_3d
-      Unreliable: false
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: false
-    - Alpha: 1
-      Autocompute Intensity Bounds: true
-      Autocompute Value Bounds:
-        Max Value: 5.6086998
-        Min Value: 3.77874994
-        Value: true
-      Axis: Z
-      Channel Name: intensity
-      Class: rviz/PointCloud2
-      Color: 240; 220; 20
-      Color Transformer: FlatColor
-      Decay Time: 0.100000001
-      Enabled: false
-      Invert Rainbow: true
-      Max Color: 255; 255; 255
-      Max Intensity: 4096
-      Min Color: 0; 0; 0
-      Min Intensity: 0
-      Name: PointCloud2
-      Position Transformer: XYZ
-      Queue Size: 200
-      Selectable: true
-      Size (Pixels): 3
-      Size (m): 0.0299999993
-      Style: Flat Squares
-      Topic: /vertical_laser_3d
-      Unreliable: false
-      Use Fixed Frame: true
-      Use rainbow: true
-      Value: false
     - Class: Submaps
       Enabled: true
       Fade-out distance: 1
@@ -301,7 +242,8 @@ Visualization Manager:
       Submaps:
         All: true
         Trajectory 0:
-          0.38: true
+          0.214: true
+          1.54: true
           Value: true
       Topic: /submap_list
       Tracking frame: base_link
@@ -341,12 +283,12 @@ Visualization Manager:
       Class: rviz/Map
       Color Scheme: map
       Draw Behind: false
-      Enabled: false
+      Enabled: true
       Name: Map
       Topic: /move_base/global_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: false
+      Value: true
     - Alpha: 0.699999988
       Class: rviz/Map
       Color Scheme: map
@@ -392,7 +334,7 @@ Visualization Manager:
       Enabled: true
       History Length: 1
       Name: Imu
-      Topic: /imu/data_jitter_filtered
+      Topic: /imu/data_filtered
       Unreliable: false
       Value: true
     - Alpha: 0.699999988
@@ -448,25 +390,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 7.5912509
+      Distance: 11.8804398
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -2.99658036
-        Y: 1.02139592
-        Z: -3.96317046e-06
+        X: -0.450032473
+        Y: 1.09747028
+        Z: -5.87051909e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.559796393
+      Pitch: 0.329796731
       Target Frame: <Fixed Frame>
       Value: ThirdPersonFollower (rviz)
-      Yaw: 2.85041022
+      Yaw: 1.79540884
     Saved: ~
 Window Geometry:
   Displays:
