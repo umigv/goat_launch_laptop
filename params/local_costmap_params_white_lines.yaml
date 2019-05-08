@@ -11,7 +11,7 @@ local_costmap:
   plugins:
     - {name: static_map, type: "costmap_2d::StaticLayer"}
     - {name: obstacles, type: "costmap_2d::VoxelLayer"}
-    - {name: white_lines, type: "costmap_2d::VoxelLayer"}
+    - {name: white_lines, type: "costmap_2d::StaticLayer"}
     - {name: inflation, type: "costmap_2d::InflationLayer"}
   static_map:
     map_topic: "map"
@@ -26,12 +26,6 @@ local_costmap:
       clearing: true
       marking: true
   white_lines:
-    observation_sources: "nav_msgs/OccupancyGrid"
-    nav_msgs/OccupancyGrid:
-      topic: "nav_msgs/OccupancyGrid"
-      expected_update_rate: 0.2
-      data_type: "nav_msgs/OccupancyGrid"
-      clearing: true
-      marking: true
+      map_topic: "nav_msgs/OccupancyGrid"
   inflation:
     inflation_radius: 0.7

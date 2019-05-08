@@ -8,7 +8,6 @@ Panels:
         - /Submaps1
         - /PointCloud21
         - /PointCloud21/Autocompute Value Bounds1
-        - /Map4/Status1
         - /Marker1
       Splitter Ratio: 0.600670993
     Tree Height: 775
@@ -233,7 +232,7 @@ Visualization Manager:
       Value: true
       Visual Enabled: true
     - Class: Submaps
-      Enabled: true
+      Enabled: false
       Fade-out distance: 1
       High Resolution: true
       Low Resolution: false
@@ -241,14 +240,10 @@ Visualization Manager:
       Submap query service: /submap_query
       Submaps:
         All: true
-        Trajectory 0:
-          0.214: true
-          1.54: true
-          Value: true
       Topic: /submap_list
       Tracking frame: base_link
       Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 1
       Autocompute Intensity Bounds: true
       Autocompute Value Bounds:
@@ -279,26 +274,6 @@ Visualization Manager:
       Use Fixed Frame: true
       Use rainbow: true
       Value: true
-    - Alpha: 0.699999988
-      Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: true
-      Name: Map
-      Topic: /move_base/global_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: true
-    - Alpha: 0.699999988
-      Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
-      Enabled: false
-      Name: Map
-      Topic: /move_base/local_costmap/costmap
-      Unreliable: false
-      Use Timestamp: false
-      Value: false
     - Class: rviz/MarkerArray
       Enabled: true
       Marker Topic: /trajectory_node_list
@@ -331,22 +306,22 @@ Visualization Manager:
     - Alpha: 1
       Class: rviz_plugin_tutorials/Imu
       Color: 204; 51; 204
-      Enabled: true
+      Enabled: false
       History Length: 1
       Name: Imu
       Topic: /imu/data_filtered
       Unreliable: false
-      Value: true
+      Value: false
     - Alpha: 0.699999988
       Class: rviz/Map
       Color Scheme: map
       Draw Behind: false
-      Enabled: false
+      Enabled: true
       Name: Map
       Topic: /move_base/local_costmap/costmap
       Unreliable: false
       Use Timestamp: false
-      Value: false
+      Value: true
     - Alpha: 0.699999988
       Class: rviz/Map
       Color Scheme: map
@@ -369,7 +344,7 @@ Visualization Manager:
   Global Options:
     Background Color: 100; 100; 100
     Default Light: true
-    Fixed Frame: map
+    Fixed Frame: base_footprint
     Frame Rate: 30
   Name: root
   Tools:
@@ -390,25 +365,25 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/ThirdPersonFollower
-      Distance: 11.8804398
+      Distance: 15.0388641
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -0.450032473
-        Y: 1.09747028
-        Z: -5.87051909e-06
+        X: 1.2694819
+        Y: 1.04806519
+        Z: -2.05582182e-06
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.329796731
+      Pitch: 0.834795356
       Target Frame: <Fixed Frame>
       Value: ThirdPersonFollower (rviz)
-      Yaw: 1.79540884
+      Yaw: 0.985422373
     Saved: ~
 Window Geometry:
   Displays:
