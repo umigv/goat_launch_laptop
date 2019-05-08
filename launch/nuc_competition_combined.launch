@@ -4,20 +4,11 @@
     <include file="$(find goat_launch_laptop)/launch/cartographer.launch"/>
     <include file="$(find velodyne_pointcloud)/launch/VLP16_points.launch"/>
 
+    <include file="$(find goat_launch_laptop)/launch/move_base.launch"/>
+    <include file="$(find goat_launch_laptop)/launch/encoders.launch"/>
+    <include file="$(find goat_launch_laptop)/launch/goat_odom.launch"/>
+
     <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
         type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
-
-    <node name="static_transform_publisher1" pkg="tf"
-        type="static_transform_publisher"
-        args="0 0 0 0 0 0 /laser_base /velodyne 1" />
-
-    <node name="static_transform_publisher2" pkg="tf"
-        type="static_transform_publisher"
-        args="0 0 0 0 0 0 /odom /base_link 1" />
-
-    <node name="static_transform_publisher3" pkg="tf"
-        type="static_transform_publisher"
-        args="0 0 0 0 0 0 /map /odom 1" />
-
 
 </launch>
