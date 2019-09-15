@@ -6,7 +6,7 @@
 <!--
           <remap from="imu" to="imu/data_jitter_filtered"/>
 -->
-	  <remap from="imu" to="imu/data_jitter_filtered"/>
+	  <remap from="imu" to="imu/data"/>
           <remap from="odom" to="odometry/filtered"/>
           <remap from="points2" to="velodyne_points"/> 
           <remap from="fix" to="gps/fix"/>

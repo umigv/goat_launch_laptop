@@ -1,6 +1,6 @@
 <!-- runs phidgets_imu_node, transform_imu_node, and imu_filter_node -->
 <launch>
-    <rosparam command="load" file="$(find goat_launch)/params/imu.yaml"/>
+    <rosparam command="load" file="$(find goat_launch_laptop)/params/imu.yaml"/>
 
     <!-- not required, could be simulating -->
     <node name="phidgets_imu_node" pkg="phidgets_imu"
@@ -23,6 +23,7 @@
           type="complementary_filter_node" output="screen" required="true"
           clear_params="true"/>
 
+<!--
     <node name="imu_temporal_filter_node" pkg="imu_temporal_filter"
           type="imu_temporal_filter_node" output="screen" required="true"
           clear_params="true"/>
@@ -30,5 +31,5 @@
     <node name="imu_jitter_filter_node" pkg="imu_jitter_filter"
 	  type="imu_jitter_filter_node" output="screen" required="true"
 	  clear_params="true"/>
-
+-->
 </launch>
