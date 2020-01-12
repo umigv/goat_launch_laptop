@@ -1,0 +1,5 @@
+<launch
+  <node pkg="path_planning" type="a_star" name="a_star_program" />
+  <node pkg="path_planning" type="listener" name="a_star_listener" />
+  <node pkg="motor_cmds" type="publisher" name"trajectory_planner" />
+ </launch>
